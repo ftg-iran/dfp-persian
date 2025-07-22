@@ -22,7 +22,7 @@ const bookStructure = [
 
 // Docsify configuration
 window.$docsify = {
-  name: 'Your Book Title',
+  name: 'Django for Professionals',
   loadSidebar: true,
   themeColor: '#3f51b5',
   alias: {
@@ -42,22 +42,25 @@ window.$docsify = {
 
 // Add navigation buttons to bottom of each page
 function addNavigationButtons() {
-  const currentPath = window.location.pathname;
-  const currentIndex = bookStructure.findIndex(item => currentPath.includes(item));
+  const currentPath = decodeURIComponent(window.location.pathname);
+  const currentIndex = bookStructure.findIndex(item => 
+    currentPath.includes(encodeURI(item.replace(/ /g, '%20')))
   
   if (currentIndex >= 0) {
     let navHtml = '<div class="nav-buttons">';
     
     // Previous button
     if (currentIndex > 0) {
-      navHtml += `<a href="/${bookStructure[currentIndex - 1]}">← Previous Chapter</a>`;
+      const prevPath = encodeURI(bookStructure[currentIndex - 1]);
+      navHtml += `<a href="/${prevPath.replace(/ /g, '%20')}">← Previous Chapter</a>`;
     } else {
       navHtml += '<span></span>';
     }
     
     // Next button
     if (currentIndex < bookStructure.length - 1) {
-      navHtml += `<a href="/${bookStructure[currentIndex + 1]}">Next Chapter →</a>`;
+      const nextPath = encodeURI(bookStructure[currentIndex + 1]);
+      navHtml += `<a href="/${nextPath.replace(/ /g, '%20')}">Next Chapter →</a>`;
     }
     
     navHtml += '</div>';
