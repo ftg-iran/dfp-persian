@@ -1,0 +1,33 @@
+.sidebar-nav li {
+  white-space: normal;
+  padding: 5px 0;
+}
+.sidebar-nav a {
+  line-height: 1.4;
+}
+.sidebar {
+  width: 300px !important;
+}
+.sidebar-nav strong {
+  color: var(--theme-color);
+  display: block;
+  margin-top: 15px;
+}
+/* Style for navigation buttons at bottom of each page */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] {
+  --sidebar-nav-link-color: #e0e0e0;
+}
+
+/* Smooth theme transition */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
