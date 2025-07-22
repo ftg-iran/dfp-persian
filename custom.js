@@ -1,28 +1,28 @@
 // Book structure - update this when adding new chapters
 const bookStructure = [
-  '00- Introduction/README.md',
-  '01- Docker/README.md',
-  '02- PostgreSQL/README.md',
-  '03- Bookstore-Project/README.md',
-  '04- Pages-App/README.md',
-  '05- User-Registration/README.md',
-  '06- Static-Assets/README.md',
-  '07- Advanced-User-Registration/README.md',
-  '08- Environment-Variables/README.md',
-  '09- Email/README.md',
-  '10- Books-App/README.md',
-  '11- Reviews-App/README.md',
-  '12- File-Image-Uploads/README.md',
-  '13- Permissions/README.md',
-  '14- Search/README.md',
-  '15- Performance/README.md',
-  '16- Deployment/README.md',
+  '00-Introduction/README.md',
+  '01-Docker/README.md',
+  '02-PostgreSQL/README.md',
+  '03-Bookstore-Project/README.md',
+  '04-Pages-App/README.md',
+  '05-User-Registration/README.md',
+  '06-Static-Assets/README.md',
+  '07-Advanced-User-Registration/README.md',
+  '08-Environment-Variables/README.md',
+  '09-Email/README.md',
+  '10-Books-App/README.md',
+  '11-Reviews-App/README.md',
+  '12-File-Image-Uploads/README.md',
+  '13-Permissions/README.md',
+  '14-Search/README.md',
+  '15-Performance/README.md',
+  '16-Deployment/README.md',
   'Conclusion/README.md'
 ];
 
 // Docsify configuration
 window.$docsify = {
-  name: 'Django for Professionals',
+  name: 'Your Book Title',
   loadSidebar: true,
   themeColor: '#3f51b5',
   alias: {
@@ -42,25 +42,22 @@ window.$docsify = {
 
 // Add navigation buttons to bottom of each page
 function addNavigationButtons() {
-  const currentPath = decodeURIComponent(window.location.pathname);
-  const currentIndex = bookStructure.findIndex(item => 
-    currentPath.includes(encodeURI(item.replace(/ /g, '%20')))
+  const currentPath = window.location.pathname;
+  const currentIndex = bookStructure.findIndex(item => currentPath.includes(item));
   
   if (currentIndex >= 0) {
     let navHtml = '<div class="nav-buttons">';
     
     // Previous button
     if (currentIndex > 0) {
-      const prevPath = encodeURI(bookStructure[currentIndex - 1]);
-      navHtml += `<a href="/${prevPath.replace(/ /g, '%20')}">← Previous Chapter</a>`;
+      navHtml += `<a href="/${bookStructure[currentIndex - 1]}">← Previous Chapter</a>`;
     } else {
       navHtml += '<span></span>';
     }
     
     // Next button
     if (currentIndex < bookStructure.length - 1) {
-      const nextPath = encodeURI(bookStructure[currentIndex + 1]);
-      navHtml += `<a href="/${nextPath.replace(/ /g, '%20')}">Next Chapter →</a>`;
+      navHtml += `<a href="/${bookStructure[currentIndex + 1]}">Next Chapter →</a>`;
     }
     
     navHtml += '</div>';
