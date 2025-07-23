@@ -89,3 +89,6 @@
 .dark .nav-buttons a {
   background: var(--accent-color);
 }
+
+code {
+  direction: ltr;
