@@ -25,6 +25,7 @@
 
 - **Optimization**
   - [Performance](/15-Performance/README.md)
-  - [Deployment](/16-Deployment/README.md)
+  - [Security](/16-Security/README.md)
+  - [Deployment](/17-Deployment/README.md)
 
 - [Conclusion](/Conclusion/README.md)
