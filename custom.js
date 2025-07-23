@@ -3,11 +3,11 @@ const bookStructure = [
   '00-Introduction/README.md',
   '01-Docker/README.md',
   '02-PostgreSQL/README.md',
-  '03-Bookstore-Project/README.md',
-  '04-Pages-App/README.md',
-  '05-User-Registration/README.md',
-  '06-Static-Assets/README.md',
-  '07-Advanced-User-Registration/README.md',
+  '03-BookstoreProject/README.md',
+  '04-PagesApp/README.md',
+  '05-UserRegistration/README.md',
+  '06-StaticAssets/README.md',
+  '07-AdvancedUserRegistration/README.md',
   '08-Environment-Variables/README.md',
   '09-Email/README.md',
   '10-Books-App/README.md',
@@ -22,7 +22,7 @@ const bookStructure = [
 
 // Docsify configuration
 window.$docsify = {
-  name: 'Your Book Title',
+  name: 'Django for Professionals',
   loadSidebar: true,
   themeColor: '#3f51b5',
   alias: {
