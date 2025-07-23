@@ -13,7 +13,7 @@
 
 - **Advanced Features**
   - [Advanced Registration](/07-AdvancedUserRegistration/README.md)
-  - [Environment Variables](/08-EnvironmentVariables/README.md)
+  - [Environment Variables](/08-Environment-Variables/README.md)
   - [Email Integration](/09-Email/README.md)
   - [Books App](/10-Books-App/README.md)
 
