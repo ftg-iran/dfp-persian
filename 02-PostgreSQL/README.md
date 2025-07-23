@@ -175,7 +175,7 @@ $ docker-compose exec web python manage.py createsuperuser
 </p>
 
 <p align="center">
-  <img width="900" height="500" src="imgs/Django admin login.PNG">
+  <img width="900" height="500" src="./imgs/Django admin login.PNG">
   <p align="center"><strong>Django admin login</strong></p>
 </p>
 
