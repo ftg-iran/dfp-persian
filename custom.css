@@ -74,6 +74,7 @@
 .markdown-section {
   max-width: 900px;
   padding: 2rem 3rem;
+  direction: ltr;
 }
 
 /* Dark theme adjustments */
