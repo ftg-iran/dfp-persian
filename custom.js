@@ -34,7 +34,10 @@ window.$docsify = {
   plugins: [
     function(hook, vm) {
       hook.doneEach(function() {
-        addNavigationButtons();
+        // Only add buttons if they don't already exist
+        if (!document.querySelector('.nav-buttons')) {
+          addNavigationButtons();
+        }
         if (!document.getElementById('theme-toggle')) {
           addThemeToggle();
         }
@@ -46,29 +49,19 @@ window.$docsify = {
 // Fixed navigation buttons with debug logging
 function addNavigationButtons() {
   const currentHash = window.location.hash.split('?')[0];
-  console.log('Current URL:', currentHash); // Debug log
-  
   const currentIndex = bookStructure.findIndex(path => currentHash === path);
-  console.log('Matched Index:', currentIndex); // Debug log
   
   if (currentIndex >= 0) {
-    let navHtml = '<div class="nav-buttons" style="border:2px solid red;padding:10px;margin-top:20px;">';
+    const navHtml = `
+      <div class="nav-buttons">
+        ${currentIndex > 0 ? `<a href="${bookStructure[currentIndex-1]}" class="nav-button">← Previous</a>` : '<span></span>'}
+        ${currentIndex < bookStructure.length-1 ? `<a href="${bookStructure[currentIndex+1]}" class="nav-button">Next →</a>` : ''}
+      </div>
+    `;
     
-    if (currentIndex > 0) {
-      navHtml += `<a href="${bookStructure[currentIndex-1]}" style="padding:8px 16px;background:#3f51b5;color:white;border-radius:4px;">← Previous</a>`;
-    } else {
-      navHtml += '<span></span>';
-    }
-    
-    if (currentIndex < bookStructure.length - 1) {
-      navHtml += `<a href="${bookStructure[currentIndex+1]}" style="padding:8px 16px;background:#3f51b5;color:white;border-radius:4px;margin-left:auto;">Next →</a>`;
-    }
-    
-    navHtml += '</div>';
     const content = document.querySelector('.content');
-    if (content) {
+    if (content && !content.querySelector('.nav-buttons')) {
       content.insertAdjacentHTML('beforeend', navHtml);
-      console.log('Added navigation buttons'); // Debug log
     }
   }
 }
