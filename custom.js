@@ -1,23 +1,23 @@
 // Book structure - update this when adding new chapters
 const bookStructure = [
-  '#/00-Introduction/README.md',
-  '#/01-Docker/README.md',
-  '#/02-PostgreSQL/README.md',
-  '#/03-BookstoreProject/README.md',
-  '#/04-PagesApp/README.md',
-  '#/05-UserRegistration/README.md',
-  '#/06-StaticAssets/README.md',
-  '#/07-AdvancedUserRegistration/README.md',
-  '#/08-Environment-Variables/README.md',
-  '#/09-Email/README.md',
-  '#/10-Books-App/README.md',
-  '#/11-Reviews-App/README.md',
-  '#/12-File-Image-Uploads/README.md',
-  '#/13-Permissions/README.md',
-  '#/14-Search/README.md',
-  '#/15-Performance/README.md',
-  '#/16-Deployment/README.md',
-  '#/Conclusion/README.md'
+  '#/00-Introduction/README',
+  '#/01-Docker/README',
+  '#/02-PostgreSQL/README',
+  '#/03-BookstoreProject/README',
+  '#/04-PagesApp/README',
+  '#/05-UserRegistration/README',
+  '#/06-StaticAssets/README',
+  '#/07-AdvancedUserRegistration/README',
+  '#/08-Environment-Variables/README',
+  '#/09-Email/README',
+  '#/10-Books-App/README',
+  '#/11-Reviews-App/README',
+  '#/12-File-Image-Uploads/README',
+  '#/13-Permissions/README',
+  '#/14-Search/README',
+  '#/15-Performance/README',
+  '#/16-Deployment/README',
+  '#/Conclusion/README'
 ];
 
 // Theme initialization on load
@@ -43,30 +43,37 @@ window.$docsify = {
   ]
 };
 
-// Fixed navigation buttons
+// Fixed navigation buttons with debug logging
 function addNavigationButtons() {
   const currentHash = window.location.hash.split('?')[0];
-  const currentIndex = bookStructure.findIndex(path => currentHash.startsWith(path));
+  console.log('Current URL:', currentHash); // Debug log
+  
+  const currentIndex = bookStructure.findIndex(path => currentHash === path);
+  console.log('Matched Index:', currentIndex); // Debug log
   
   if (currentIndex >= 0) {
-    let navHtml = '<div class="nav-buttons" style="border:2px solid red;">';
+    let navHtml = '<div class="nav-buttons" style="border:2px solid red;padding:10px;margin-top:20px;">';
     
-    // Previous button
     if (currentIndex > 0) {
-      navHtml += `<a href="${bookStructure[currentIndex-1]}">← Previous</a>`;
+      navHtml += `<a href="${bookStructure[currentIndex-1]}" style="padding:8px 16px;background:#3f51b5;color:white;border-radius:4px;">← Previous</a>`;
+    } else {
+      navHtml += '<span></span>';
     }
     
-    // Next button
-    if (currentIndex < bookStructure.length-1) {
-      navHtml += `<a href="${bookStructure[currentIndex+1]}">Next →</a>`;
+    if (currentIndex < bookStructure.length - 1) {
+      navHtml += `<a href="${bookStructure[currentIndex+1]}" style="padding:8px 16px;background:#3f51b5;color:white;border-radius:4px;margin-left:auto;">Next →</a>`;
     }
     
     navHtml += '</div>';
-    document.querySelector('.content').insertAdjacentHTML('beforeend', navHtml);
+    const content = document.querySelector('.content');
+    if (content) {
+      content.insertAdjacentHTML('beforeend', navHtml);
+      console.log('Added navigation buttons'); // Debug log
+    }
   }
 }
 
-// Theme functions
+// Theme functions (keep these the same)
 function addThemeToggle() {
   const toggle = document.createElement('div');
   toggle.id = 'theme-toggle';
