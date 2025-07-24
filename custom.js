@@ -1,23 +1,23 @@
 // Book structure - update this when adding new chapters
 const bookStructure = [
-  '00-Introduction/README.md',
-  '01-Docker/README.md',
-  '02-PostgreSQL/README.md',
-  '03-BookstoreProject/README.md',
-  '04-PagesApp/README.md',
-  '05-UserRegistration/README.md',
-  '06-StaticAssets/README.md',
-  '07-AdvancedUserRegistration/README.md',
-  '08-Environment-Variables/README.md',
-  '09-Email/README.md',
-  '10-Books-App/README.md',
-  '11-Reviews-App/README.md',
-  '12-File-Image-Uploads/README.md',
-  '13-Permissions/README.md',
-  '14-Search/README.md',
-  '15-Performance/README.md',
-  '16-Deployment/README.md',
-  'Conclusion/README.md'
+  '#/00-Introduction/README.md',
+  '#/01-Docker/README.md',
+  '#/02-PostgreSQL/README.md',
+  '#/03-BookstoreProject/README.md',
+  '#/04-PagesApp/README.md',
+  '#/05-UserRegistration/README.md',
+  '#/06-StaticAssets/README.md',
+  '#/07-AdvancedUserRegistration/README.md',
+  '#/08-Environment-Variables/README.md',
+  '#/09-Email/README.md',
+  '#/10-Books-App/README.md',
+  '#/11-Reviews-App/README.md',
+  '#/12-File-Image-Uploads/README.md',
+  '#/13-Permissions/README.md',
+  '#/14-Search/README.md',
+  '#/15-Performance/README.md',
+  '#/16-Deployment/README.md',
+  '#/Conclusion/README.md'
 ];
 
 // Theme initialization on load
@@ -45,26 +45,24 @@ window.$docsify = {
 
 // Fixed navigation buttons
 function addNavigationButtons() {
-  const currentPath = decodeURIComponent(window.location.pathname);
-  const currentIndex = bookStructure.findIndex(item => 
-    currentPath.includes(item.split('/').pop())
-  );
+  const currentHash = window.location.hash.split('?')[0];
+  const currentIndex = bookStructure.findIndex(path => currentHash.startsWith(path));
   
   if (currentIndex >= 0) {
-    let navHtml = '<div class="nav-buttons">';
+    let navHtml = '<div class="nav-buttons" style="border:2px solid red;">';
     
+    // Previous button
     if (currentIndex > 0) {
-      navHtml += `<a href="${bookStructure[currentIndex - 1]}" class="nav-button">← Previous</a>`;
-    } else {
-      navHtml += '<span></span>';
+      navHtml += `<a href="${bookStructure[currentIndex-1]}">← Previous</a>`;
     }
     
-    if (currentIndex < bookStructure.length - 1) {
-      navHtml += `<a href="${bookStructure[currentIndex + 1]}" class="nav-button">Next →</a>`;
+    // Next button
+    if (currentIndex < bookStructure.length-1) {
+      navHtml += `<a href="${bookStructure[currentIndex+1]}">Next →</a>`;
     }
     
     navHtml += '</div>';
-    document.querySelector('.content')?.insertAdjacentHTML('beforeend', navHtml);
+    document.querySelector('.content').insertAdjacentHTML('beforeend', navHtml);
   }
 }
 
