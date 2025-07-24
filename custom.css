@@ -39,7 +39,7 @@ body {
 /* Navigation buttons */
 .nav-buttons {
   margin: 3rem 0;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1rem;
   display: flex;
   justify-content: space-between;
 }
