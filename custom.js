@@ -20,6 +20,9 @@ const bookStructure = [
   'Conclusion/README.md'
 ];
 
+// Theme initialization on load
+document.addEventListener('DOMContentLoaded', setInitialTheme);
+
 // Docsify configuration
 window.$docsify = {
   name: 'Django for Professionals',
@@ -29,75 +32,63 @@ window.$docsify = {
     '/.*/_sidebar.md': '/_sidebar.md'
   },
   plugins: [
-    // Auto navigation buttons
     function(hook, vm) {
       hook.doneEach(function() {
         addNavigationButtons();
-        addThemeToggle();
-        setInitialTheme();
+        if (!document.getElementById('theme-toggle')) {
+          addThemeToggle();
+        }
       });
     }
   ]
 };
 
-// Add navigation buttons to bottom of each page
+// Fixed navigation buttons
 function addNavigationButtons() {
-  const currentPath = window.location.pathname;
-  const currentIndex = bookStructure.findIndex(item => currentPath.includes(item));
+  const currentPath = decodeURIComponent(window.location.pathname);
+  const currentIndex = bookStructure.findIndex(item => 
+    currentPath.includes(item.split('/').pop())
+  );
   
   if (currentIndex >= 0) {
     let navHtml = '<div class="nav-buttons">';
     
-    // Previous button
     if (currentIndex > 0) {
-      navHtml += `<a href="/${bookStructure[currentIndex - 1]}">← Previous Chapter</a>`;
+      navHtml += `<a href="${bookStructure[currentIndex - 1]}" class="nav-button">← Previous</a>`;
     } else {
       navHtml += '<span></span>';
     }
     
-    // Next button
     if (currentIndex < bookStructure.length - 1) {
-      navHtml += `<a href="/${bookStructure[currentIndex + 1]}">Next Chapter →</a>`;
+      navHtml += `<a href="${bookStructure[currentIndex + 1]}" class="nav-button">Next →</a>`;
     }
     
     navHtml += '</div>';
-    const content = document.querySelector('.content');
-    if (content) {
-      content.insertAdjacentHTML('beforeend', navHtml);
-    }
+    document.querySelector('.content')?.insertAdjacentHTML('beforeend', navHtml);
   }
 }
 
-// Theme toggle functionality
+// Theme functions
 function addThemeToggle() {
-  if (document.getElementById('theme-toggle')) return;
-  
   const toggle = document.createElement('div');
   toggle.id = 'theme-toggle';
   toggle.innerHTML = '🌓';
   document.body.appendChild(toggle);
-  
   toggle.addEventListener('click', toggleTheme);
 }
 
 function toggleTheme() {
   const lightTheme = document.getElementById('light-theme');
   const darkTheme = document.getElementById('dark-theme');
+  const isDark = lightTheme.disabled;
   
-  if (lightTheme.disabled) {
-    lightTheme.disabled = false;
-    darkTheme.disabled = true;
-    localStorage.setItem('docsify-theme', 'light');
-  } else {
-    lightTheme.disabled = true;
-    darkTheme.disabled = false;
-    localStorage.setItem('docsify-theme', 'dark');
-  }
+  lightTheme.disabled = !isDark;
+  darkTheme.disabled = isDark;
+  localStorage.setItem('docsify-theme', isDark ? 'light' : 'dark');
 }
 
 function setInitialTheme() {
-  const savedTheme = localStorage.getItem('docsify-theme');
-  if (savedTheme === 'dark') {
+  if (localStorage.getItem('docsify-theme') === 'dark') {
     document.getElementById('light-theme').disabled = true;
     document.getElementById('dark-theme').disabled = false;
   }
