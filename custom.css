@@ -3,6 +3,13 @@
   --accent-color: #ff4081;
 }
 
+body { 
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 /* Theme toggle button */
 #theme-toggle {
   position: fixed;
