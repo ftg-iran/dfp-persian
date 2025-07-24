@@ -23,6 +23,54 @@ const bookStructure = [
 // Theme initialization on load
 document.addEventListener('DOMContentLoaded', setInitialTheme);
 
+// Global variable to track if buttons exist
+let buttonsExist = false;
+
+// Updated navigation function
+function updateNavigationButtons() {
+  const currentHash = window.location.hash.split('?')[0];
+  const currentIndex = bookStructure.findIndex(path => currentHash === path);
+  
+  // Remove existing buttons if they exist
+  const oldButtons = document.querySelector('.nav-buttons');
+  if (oldButtons) {
+    oldButtons.remove();
+    buttonsExist = false;
+  }
+
+  if (currentIndex >= 0) {
+    const navHtml = `
+      <div class="nav-buttons">
+        ${currentIndex > 0 ? 
+          `<a href="${bookStructure[currentIndex-1]}" class="nav-button prev-button">← Previous</a>` 
+          : '<span></span>'}
+        ${currentIndex < bookStructure.length-1 ? 
+          `<a href="${bookStructure[currentIndex+1]}" class="nav-button next-button">Next →</a>` 
+          : ''}
+      </div>
+    `;
+    
+    const content = document.querySelector('.content');
+    if (content) {
+      content.insertAdjacentHTML('beforeend', navHtml);
+      buttonsExist = true;
+      
+      // Add click handlers after buttons are inserted
+      document.querySelector('.prev-button')?.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.hash = bookStructure[currentIndex-1];
+        setTimeout(updateNavigationButtons, 100);
+      });
+      
+      document.querySelector('.next-button')?.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.hash = bookStructure[currentIndex+1];
+        setTimeout(updateNavigationButtons, 100);
+      });
+    }
+  }
+}
+
 // Docsify configuration
 window.$docsify = {
   name: 'Django for Professionals',
@@ -32,11 +80,10 @@ window.$docsify = {
     '/.*/_sidebar.md': '/_sidebar.md'
   },
   plugins: [
-    function(hook, vm) {
+    function(hook) {
       hook.doneEach(function() {
-        // Only add buttons if they don't already exist
-        if (!document.querySelector('.nav-buttons')) {
-          addNavigationButtons();
+        if (!buttonsExist) {
+          updateNavigationButtons();
         }
         if (!document.getElementById('theme-toggle')) {
           addThemeToggle();
@@ -46,25 +93,12 @@ window.$docsify = {
   ]
 };
 
-// Fixed navigation buttons with debug logging
-function addNavigationButtons() {
-  const currentHash = window.location.hash.split('?')[0];
-  const currentIndex = bookStructure.findIndex(path => currentHash === path);
-  
-  if (currentIndex >= 0) {
-    const navHtml = `
-      <div class="nav-buttons">
-        ${currentIndex > 0 ? `<a href="${bookStructure[currentIndex-1]}" class="nav-button">← Previous</a>` : '<span></span>'}
-        ${currentIndex < bookStructure.length-1 ? `<a href="${bookStructure[currentIndex+1]}" class="nav-button">Next →</a>` : ''}
-      </div>
-    `;
-    
-    const content = document.querySelector('.content');
-    if (content && !content.querySelector('.nav-buttons')) {
-      content.insertAdjacentHTML('beforeend', navHtml);
-    }
-  }
-}
+// Handle hash changes
+window.addEventListener('hashchange', function() {
+  buttonsExist = false;
+  updateNavigationButtons();
+});
+
 
 // Theme functions (keep these the same)
 function addThemeToggle() {
