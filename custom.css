@@ -1,6 +1,7 @@
 :root {
   --theme-color: #3f51b5;
   --accent-color: #ff4081;
+  --border-color: #e0e0e0;
 }
 
 body { 
@@ -8,6 +9,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  transition: background-color 0.3s ease;
 }
 
 /* Theme toggle button */
@@ -27,6 +29,11 @@ body {
   z-index: 999;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.1);
 }
 
 /* Navigation buttons */
@@ -39,21 +46,36 @@ body {
   justify-content: space-between;
 }
 
-.nav-buttons a {
+.nav-button {
   padding: 0.6rem 1.2rem;
   border-radius: 4px;
   background: var(--theme-color);
   color: white !important;
   text-decoration: none !important;
   transition: all 0.3s ease;
+  display: inline-block;
 }
 
-.nav-buttons a:hover {
+.nav-button:hover {
   background: var(--accent-color);
   transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Sidebar styling */
+/* Dark mode specific styles */
+.dark {
+  --border-color: #444;
+}
+
+.dark .nav-button {
+  background: var(--accent-color);
+}
+
+.dark .nav-button:hover {
+  background: #ff2674;
+}
+
+/* Existing sidebar styles (keep these) */
 .sidebar {
   width: 280px !important;
   padding: 20px !important;
@@ -77,24 +99,18 @@ body {
   background: rgba(var(--theme-color), 0.1);
 }
 
-/* Content area */
 .markdown-section {
   max-width: 900px;
   padding: 2rem 3rem;
   direction: rtl;
 }
 
-/* Dark theme adjustments */
 .dark .sidebar {
   background-color: #1e1e1e !important;
 }
 
 .dark .sidebar-nav a {
   color: #e0e0e0 !important;
-}
-
-.dark .nav-buttons a {
-  background: var(--accent-color);
 }
 
 code {
