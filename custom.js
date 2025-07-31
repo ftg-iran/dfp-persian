@@ -79,6 +79,9 @@ window.$docsify = {
   alias: {
     '/.*/_sidebar.md': '/_sidebar.md'
   },
+  markdown: {
+      tables: true  // Explicitly enable tables
+  },
   plugins: [
     function(hook) {
       hook.doneEach(function() {
