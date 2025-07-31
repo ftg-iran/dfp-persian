@@ -340,28 +340,28 @@
 
 <div dir="rtl">
   
-|نام همکار|راه های ارتباطی|نوع مشارکت
+| نام همکار | راه های ارتباطی | نوع مشارکت |
 |:-:|:-:|:-:|
-|امیر مطهری|[گیتهاب](https://github.com/mthri) [لینکدین](https://www.linkedin.com/in/amir-motahari-963689138/) [توییتر](https://twitter.com/a_mthri) [تلگرام](https://t.me/a_motahari)|اداره مخزن - مترجم فصل ۱۶|
-|سامیت|[گیتلب](https://gitlab.com/sameetmoosavi) [لینکدین](https://linkedin.com/in/omid-shahbazi-76635b21b)| اداره مخزن - مترجم مقدمه|
-امید شهبازی|[گیتهاب](https://github.com/themaximalist) [لینکدین](https://linkedin.com/in/omid-shahbazi-76635b21b)| اداره مخزن - مترجم مقدمه|
-|حدیث سادات موسوی|[گیتهاب](https://github.com/cemusavi) [لینکدین](https://linkedin.com/in/hadis-sadat-mousavi-178108219)|مترجم فصل های ۱و۳|
-|خلیل فراشیانی|[گیتهاب](https://github.com/khalil-farashiani) [لینکدین](https://linkedin.com/in/khalil-farashiani-36393b21a)|مترجم فصل های۷ و جمع بندی|
-|مائده شهابی|[گیتهاب](https://github.com/mashahabi15)|مترجم فصل ۹|
-|سید محمد حسین طباطبایی|[گیتهاب](https://github.com/smhtbtb) [لینکدین](https://linkedin.com/in/mohammad-hosein-tabatabaei)|مترجم فصل ۱۲|
-|آرین قوچانی|[گیتهاب](https://github.com/arianghoochani) [لینکدین](https://linkedin.com/in/arian-ghoochani-690980168)|مترجم فصل ۱۳|
-|امین مرادی|[گیتهاب](https://github.com/aminmoradim) [توییتر](https://twitter.com/amin_moradim) [تلگرام](https://t.me/amin_moradim)|مترجم فصل ۸ |
-|کسری صادقیان پور|[گیتهاب](https://github.com/Kasra1377) [لینکدین](https://linkedin.com/in/kasra-sadeghian-pour-87a928204)|مترجم فصل ۲|
-|علی لویویی|[گیتهاب](https://github.com/aliloloee)|مترجم فصل ۱۰|
-|رضا مبارکی|[گیتهاب](https://github.com/MrRezoo) [لینکدین](https://www.linkedin.com/in/mrrezoo/) |مترجم ۱۵|
-|سحر مکرمی|[گیتهاب](https://github.com/mokarramis)|مترجم فصل ۵|
-|مهدی شیر خدایی|[گیتهاب](https://github.com/Mimshimzim)|مترجم ۱۷|
-|مهدی اسد زاده|[گیتهاب](https://github.com/mahdi-asadzadeh) [تلگرام](https://t.me/mahdi_asadzadeh)|مترجم فصل ۱۱|
-|امیرحسین صالحی|[گیتهاب](https://github.com/Amir796-hash)|مترجم فصل ۴|
-|امیرحسین محمدی|[گیتهاب](https://github.com/BlackIQ) [لینکدین](https://linkedin.com/in/amirhosseinmohammadi) [توییتر](https://twitter.com/GNU_Amir)  [تلگرام](https://t.me/BlackIQ)| اداره مخزن|
-|محمدرضا ارغشی|[گیتهاب](https://github.com/desmond4elf)|مترجم فصل ۶| 
-|امیررضا پاسندی|[گیتهاب](https://github.com/amirpsd) [تلگرام](https://t.me/amir_psd2)|مترجم فصل ۱۴|
-|شمیم صنیع ثالث|[گیتهاب](https://github.com/smimahs) [لینکدین](https://www.linkedin.com/in/shsanisales/)|مترجم فصل ۳|
+| امیر مطهری | [گیتهاب](https://github.com/mthri) [لینکدین](https://www.linkedin.com/in/amir-motahari-963689138/) [توییتر](https://twitter.com/a_mthri) [تلگرام](https://t.me/a_motahari) | اداره مخزن - مترجم فصل ۱۶ |
+| سامیت | [گیتلب](https://gitlab.com/sameetmoosavi) [لینکدین](https://linkedin.com/in/omid-shahbazi-76635b21b) | اداره مخزن - مترجم مقدمه |
+| امید شهبازی | [گیتهاب](https://github.com/themaximalist) [لینکدین](https://linkedin.com/in/omid-shahbazi-76635b21b) | اداره مخزن - مترجم مقدمه |
+| حدیث سادات موسوی | [گیتهاب](https://github.com/cemusavi) [لینکدین](https://linkedin.com/in/hadis-sadat-mousavi-178108219) | مترجم فصل های ۱و۳ |
+| خلیل فراشیانی | [گیتهاب](https://github.com/khalil-farashiani) [لینکدین](https://linkedin.com/in/khalil-farashiani-36393b21a) | مترجم فصل های۷ و جمع بندی |
+| مائده شهابی | [گیتهاب](https://github.com/mashahabi15) | مترجم فصل ۹ |
+| سید محمد حسین طباطبایی | [گیتهاب](https://github.com/smhtbtb) [لینکدین](https://linkedin.com/in/mohammad-hosein-tabatabaei) | مترجم فصل ۱۲ |
+| آرین قوچانی | [گیتهاب](https://github.com/arianghoochani) [لینکدین](https://linkedin.com/in/arian-ghoochani-690980168) | مترجم فصل ۱۳ |
+| امین مرادی | [گیتهاب](https://github.com/aminmoradim) [توییتر](https://twitter.com/amin_moradim) [تلگرام](https://t.me/amin_moradim) | مترجم فصل ۸ |
+| کسری صادقیان پور | [گیتهاب](https://github.com/Kasra1377) [لینکدین](https://linkedin.com/in/kasra-sadeghian-pour-87a928204) | مترجم فصل ۲ |
+| علی لویویی | [گیتهاب](https://github.com/aliloloee) | مترجم فصل ۱۰ |
+| رضا مبارکی | [گیتهاب](https://github.com/MrRezoo) [لینکدین](https://www.linkedin.com/in/mrrezoo/) | مترجم ۱۵ |
+| سحر مکرمی | [گیتهاب](https://github.com/mokarramis) | مترجم فصل ۵ |
+| مهدی شیر خدایی | [گیتهاب](https://github.com/Mimshimzim) | مترجم ۱۷ |
+| مهدی اسد زاده | [گیتهاب](https://github.com/mahdi-asadzadeh) [تلگرام](https://t.me/mahdi_asadzadeh) | مترجم فصل ۱۱ |
+| امیرحسین صالحی | [گیتهاب](https://github.com/Amir796-hash) | مترجم فصل ۴ |
+| امیرحسین محمدی | [گیتهاب](https://github.com/BlackIQ) [لینکدین](https://linkedin.com/in/amirhosseinmohammadi) [توییتر](https://twitter.com/GNU_Amir) [تلگرام](https://t.me/BlackIQ) | اداره مخزن |
+| محمدرضا ارغشی | [گیتهاب](https://github.com/desmond4elf) | مترجم فصل ۶ |
+| امیررضا پاسندی | [گیتهاب](https://github.com/amirpsd) [تلگرام](https://t.me/amir_psd2) | مترجم فصل ۱۴ |
+| شمیم صنیع ثالث | [گیتهاب](https://github.com/smimahs) [لینکدین](https://www.linkedin.com/in/shsanisales/) | مترجم فصل ۳ |
   
 </div>
 
