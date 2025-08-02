@@ -339,29 +339,197 @@
 </h2>
 
 <div dir="rtl">
-  
-|نام همکار|راه های ارتباطی|نوع مشارکت
-|:-:|:-:|:-:|
-|امیر مطهری|[گیتهاب](https://github.com/mthri) [لینکدین](https://www.linkedin.com/in/amir-motahari-963689138/) [توییتر](https://twitter.com/a_mthri) [تلگرام](https://t.me/a_motahari)|اداره مخزن - مترجم فصل ۱۶|
-|سامیت|[گیتلب](https://gitlab.com/sameetmoosavi) [لینکدین](https://linkedin.com/in/omid-shahbazi-76635b21b)| اداره مخزن - مترجم مقدمه|
-امید شهبازی|[گیتهاب](https://github.com/themaximalist) [لینکدین](https://linkedin.com/in/omid-shahbazi-76635b21b)| اداره مخزن - مترجم مقدمه|
-|حدیث سادات موسوی|[گیتهاب](https://github.com/cemusavi) [لینکدین](https://linkedin.com/in/hadis-sadat-mousavi-178108219)|مترجم فصل های ۱و۳|
-|خلیل فراشیانی|[گیتهاب](https://github.com/khalil-farashiani) [لینکدین](https://linkedin.com/in/khalil-farashiani-36393b21a)|مترجم فصل های۷ و جمع بندی|
-|مائده شهابی|[گیتهاب](https://github.com/mashahabi15)|مترجم فصل ۹|
-|سید محمد حسین طباطبایی|[گیتهاب](https://github.com/smhtbtb) [لینکدین](https://linkedin.com/in/mohammad-hosein-tabatabaei)|مترجم فصل ۱۲|
-|آرین قوچانی|[گیتهاب](https://github.com/arianghoochani) [لینکدین](https://linkedin.com/in/arian-ghoochani-690980168)|مترجم فصل ۱۳|
-|امین مرادی|[گیتهاب](https://github.com/aminmoradim) [توییتر](https://twitter.com/amin_moradim) [تلگرام](https://t.me/amin_moradim)|مترجم فصل ۸ |
-|کسری صادقیان پور|[گیتهاب](https://github.com/Kasra1377) [لینکدین](https://linkedin.com/in/kasra-sadeghian-pour-87a928204)|مترجم فصل ۲|
-|علی لویویی|[گیتهاب](https://github.com/aliloloee)|مترجم فصل ۱۰|
-|رضا مبارکی|[گیتهاب](https://github.com/MrRezoo) [لینکدین](https://www.linkedin.com/in/mrrezoo/) |مترجم ۱۵|
-|سحر مکرمی|[گیتهاب](https://github.com/mokarramis)|مترجم فصل ۵|
-|مهدی شیر خدایی|[گیتهاب](https://github.com/Mimshimzim)|مترجم ۱۷|
-|مهدی اسد زاده|[گیتهاب](https://github.com/mahdi-asadzadeh) [تلگرام](https://t.me/mahdi_asadzadeh)|مترجم فصل ۱۱|
-|امیرحسین صالحی|[گیتهاب](https://github.com/Amir796-hash)|مترجم فصل ۴|
-|امیرحسین محمدی|[گیتهاب](https://github.com/BlackIQ) [لینکدین](https://linkedin.com/in/amirhosseinmohammadi) [توییتر](https://twitter.com/GNU_Amir)  [تلگرام](https://t.me/BlackIQ)| اداره مخزن|
-|محمدرضا ارغشی|[گیتهاب](https://github.com/desmond4elf)|مترجم فصل ۶| 
-|امیررضا پاسندی|[گیتهاب](https://github.com/amirpsd) [تلگرام](https://t.me/amir_psd2)|مترجم فصل ۱۴|
-|شمیم صنیع ثالث|[گیتهاب](https://github.com/smimahs) [لینکدین](https://www.linkedin.com/in/shsanisales/)|مترجم فصل ۳|
+
+<table class="contributors-table">
+  <thead>
+    <tr>
+      <th style="text-align: center">نام همکار</th>
+      <th style="text-align: center">راه‌های ارتباطی</th>
+      <th style="text-align: center">نوع مشارکت</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Row 1 -->
+    <tr>
+      <td style="text-align: center">امیر مطهری</td>
+      <td style="text-align: center">
+        <a href="https://github.com/mthri" target="_blank">گیتهاب</a> • 
+        <a href="https://www.linkedin.com/in/amir-motahari-963689138/" target="_blank">لینکدین</a> • 
+        <a href="https://twitter.com/a_mthri" target="_blank">توییتر</a> • 
+        <a href="https://t.me/a_motahari" target="_blank">تلگرام</a>
+      </td>
+      <td style="text-align: center">اداره مخزن - مترجم فصل ۱۶</td>
+    </tr>
+    <!-- Row 2 -->
+    <tr>
+      <td style="text-align: center">سامیت</td>
+      <td style="text-align: center">
+        <a href="https://gitlab.com/sameetmoosavi" target="_blank">گیتلب</a> • 
+        <a href="https://linkedin.com/in/omid-shahbazi-76635b21b" target="_blank">لینکدین</a>
+      </td>
+      <td style="text-align: center">اداره مخزن - مترجم مقدمه</td>
+    </tr>
+    <!-- Row 3 -->
+    <tr>
+      <td style="text-align: center">امید شهبازی</td>
+      <td style="text-align: center">
+        <a href="https://github.com/themaximalist" target="_blank">گیتهاب</a> • 
+        <a href="https://linkedin.com/in/omid-shahbazi-76635b21b" target="_blank">لینکدین</a>
+      </td>
+      <td style="text-align: center">اداره مخزن - مترجم مقدمه</td>
+    </tr>
+    <!-- Row 4 -->
+    <tr>
+      <td style="text-align: center">حدیث سادات موسوی</td>
+      <td style="text-align: center">
+        <a href="https://github.com/cemusavi" target="_blank">گیتهاب</a> • 
+        <a href="https://linkedin.com/in/hadis-sadat-mousavi-178108219" target="_blank">لینکدین</a>
+      </td>
+      <td style="text-align: center">مترجم فصل‌های ۱و۳</td>
+    </tr>
+    <!-- Row 5 -->
+    <tr>
+      <td style="text-align: center">خلیل فراشیانی</td>
+      <td style="text-align: center">
+        <a href="https://github.com/khalil-farashiani" target="_blank">گیتهاب</a> • 
+        <a href="https://linkedin.com/in/khalil-farashiani-36393b21a" target="_blank">لینکدین</a>
+      </td>
+      <td style="text-align: center">مترجم فصل‌های ۷ و جمع‌بندی</td>
+    </tr>
+    <!-- Row 6 -->
+    <tr>
+      <td style="text-align: center">مائده شهابی</td>
+      <td style="text-align: center">
+        <a href="https://github.com/mashahabi15" target="_blank">گیتهاب</a>
+      </td>
+      <td style="text-align: center">مترجم فصل ۹</td>
+    </tr>
+    <!-- Row 7 -->
+    <tr>
+      <td style="text-align: center">سید محمد حسین طباطبایی</td>
+      <td style="text-align: center">
+        <a href="https://github.com/smhtbtb" target="_blank">گیتهاب</a> • 
+        <a href="https://linkedin.com/in/mohammad-hosein-tabatabaei" target="_blank">لینکدین</a>
+      </td>
+      <td style="text-align: center">مترجم فصل ۱۲</td>
+    </tr>
+    <!-- Row 8 -->
+    <tr>
+      <td style="text-align: center">آرین قوچانی</td>
+      <td style="text-align: center">
+        <a href="https://github.com/arianghoochani" target="_blank">گیتهاب</a> • 
+        <a href="https://linkedin.com/in/arian-ghoochani-690980168" target="_blank">لینکدین</a>
+      </td>
+      <td style="text-align: center">مترجم فصل ۱۳</td>
+    </tr>
+    <!-- Row 9 -->
+    <tr>
+      <td style="text-align: center">امین مرادی</td>
+      <td style="text-align: center">
+        <a href="https://github.com/aminmoradim" target="_blank">گیتهاب</a> • 
+        <a href="https://twitter.com/amin_moradim" target="_blank">توییتر</a> • 
+        <a href="https://t.me/amin_moradim" target="_blank">تلگرام</a>
+      </td>
+      <td style="text-align: center">مترجم فصل ۸</td>
+    </tr>
+    <!-- Row 10 -->
+    <tr>
+      <td style="text-align: center">کسری صادقیان پور</td>
+      <td style="text-align: center">
+        <a href="https://github.com/Kasra1377" target="_blank">گیتهاب</a> • 
+        <a href="https://linkedin.com/in/kasra-sadeghian-pour-87a928204" target="_blank">لینکدین</a>
+      </td>
+      <td style="text-align: center">مترجم فصل ۲</td>
+    </tr>
+    <!-- Row 11 -->
+    <tr>
+      <td style="text-align: center">علی لویویی</td>
+      <td style="text-align: center">
+        <a href="https://github.com/aliloloee" target="_blank">گیتهاب</a>
+      </td>
+      <td style="text-align: center">مترجم فصل ۱۰</td>
+    </tr>
+    <!-- Row 12 -->
+    <tr>
+      <td style="text-align: center">رضا مبارکی</td>
+      <td style="text-align: center">
+        <a href="https://github.com/MrRezoo" target="_blank">گیتهاب</a> • 
+        <a href="https://www.linkedin.com/in/mrrezoo/" target="_blank">لینکدین</a>
+      </td>
+      <td style="text-align: center">مترجم ۱۵</td>
+    </tr>
+    <!-- Row 13 -->
+    <tr>
+      <td style="text-align: center">سحر مکرمی</td>
+      <td style="text-align: center">
+        <a href="https://github.com/mokarramis" target="_blank">گیتهاب</a>
+      </td>
+      <td style="text-align: center">مترجم فصل ۵</td>
+    </tr>
+    <!-- Row 14 -->
+    <tr>
+      <td style="text-align: center">مهدی شیر خدایی</td>
+      <td style="text-align: center">
+        <a href="https://github.com/Mimshimzim" target="_blank">گیتهاب</a>
+      </td>
+      <td style="text-align: center">مترجم ۱۷</td>
+    </tr>
+    <!-- Row 15 -->
+    <tr>
+      <td style="text-align: center">مهدی اسد زاده</td>
+      <td style="text-align: center">
+        <a href="https://github.com/mahdi-asadzadeh" target="_blank">گیتهاب</a> • 
+        <a href="https://t.me/mahdi_asadzadeh" target="_blank">تلگرام</a>
+      </td>
+      <td style="text-align: center">مترجم فصل ۱۱</td>
+    </tr>
+    <!-- Row 16 -->
+    <tr>
+      <td style="text-align: center">امیرحسین صالحی</td>
+      <td style="text-align: center">
+        <a href="https://github.com/Amir796-hash" target="_blank">گیتهاب</a>
+      </td>
+      <td style="text-align: center">مترجم فصل ۴</td>
+    </tr>
+    <!-- Row 17 -->
+    <tr>
+      <td style="text-align: center">امیرحسین محمدی</td>
+      <td style="text-align: center">
+        <a href="https://github.com/BlackIQ" target="_blank">گیتهاب</a> • 
+        <a href="https://linkedin.com/in/amirhosseinmohammadi" target="_blank">لینکدین</a> • 
+        <a href="https://twitter.com/GNU_Amir" target="_blank">توییتر</a> • 
+        <a href="https://t.me/BlackIQ" target="_blank">تلگرام</a>
+      </td>
+      <td style="text-align: center">اداره مخزن</td>
+    </tr>
+    <!-- Row 18 -->
+    <tr>
+      <td style="text-align: center">محمدرضا ارغشی</td>
+      <td style="text-align: center">
+        <a href="https://github.com/desmond4elf" target="_blank">گیتهاب</a>
+      </td>
+      <td style="text-align: center">مترجم فصل ۶</td>
+    </tr>
+    <!-- Row 19 -->
+    <tr>
+      <td style="text-align: center">امیررضا پاسندی</td>
+      <td style="text-align: center">
+        <a href="https://github.com/amirpsd" target="_blank">گیتهاب</a> • 
+        <a href="https://t.me/amir_psd2" target="_blank">تلگرام</a>
+      </td>
+      <td style="text-align: center">مترجم فصل ۱۴</td>
+    </tr>
+    <!-- Row 20 -->
+    <tr>
+      <td style="text-align: center">شمیم صنیع ثالث</td>
+      <td style="text-align: center">
+        <a href="https://github.com/smimahs" target="_blank">گیتهاب</a> • 
+        <a href="https://www.linkedin.com/in/shsanisales/" target="_blank">لینکدین</a>
+      </td>
+      <td style="text-align: center">مترجم فصل ۳</td>
+    </tr>
+  </tbody>
+</table>
   
 </div>
 

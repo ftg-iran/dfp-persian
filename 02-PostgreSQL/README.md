@@ -175,7 +175,9 @@ $ docker-compose exec web python manage.py createsuperuser
 </p>
 
 <p align="center">
-  <img width="900" height="500" src="imgs/Django admin login.PNG">
+
+  ![image](<./imgs/Django admin login.PNG>)
+  <!-- <img width="900" height="500" src="imgs/Django admin login.PNG"> -->
   <p align="center"><strong>Django admin login</strong></p>
 </p>
 
@@ -184,7 +186,9 @@ $ docker-compose exec web python manage.py createsuperuser
 </p>
 
 <p align="center">
-  <img width="900" height="500" src="imgs/Django sqliteadmin.PNG">
+
+  ![image](<./imgs/Django sqliteadmin.PNG>)
+  <!-- <img width="900" height="500" src="imgs/Django sqliteadmin.PNG"> -->
   <p align="center"><strong>Django sqliteadmin</strong></p>
 </p>
 
@@ -193,7 +197,9 @@ $ docker-compose exec web python manage.py createsuperuser
 </p>
 
 <p align="center">
-  <img width="900" height="500" src="imgs/Admin Users page.PNG">
+
+  ![image](<./imgs/Admin Users page.PNG>)
+  <!-- <img width="900" height="500" src="imgs/Admin Users page.PNG"> -->
   <p align="center"><strong>Admin Users page</strong></p>
 </p>
 
@@ -331,7 +337,9 @@ DATABASES = {
 </p>
 
 <p align="center">
-  <img width="900" height="500" src="imgs/Django error.PNG">
+
+ ![image](<./imgs/Django error.PNG>)
+<!--   <img width="900" height="500" src="imgs/Django error.PNG"> -->
   <p align="center"><strong>Django error</strong></p>
 </p>
 
